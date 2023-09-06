@@ -1,0 +1,29 @@
+/*Faça um programa que leia cinco números inteiros, calcule e escreva
+a soma o produto e a média dos números lidos */
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+//Declaração de variáveis
+float v[5], soma = 0, prod = 1, med;
+
+//Entrada de dados
+for(int cont = 0; cont < 5; cont ++)
+    {
+    printf("Digite o %d° valor\n", cont + 1);
+    scanf("%f", &v[cont]);
+    //Cálculo
+    soma = soma + v[cont];
+    prod = prod * v[cont];
+    }
+med = soma / 5;
+
+//Saída de dados
+printf("Valor da soma = %.2f\nproduto = %.2f\nmedia = %.2f\n", soma, prod, med);
+
+//Fim da função principal
+return 0;
+}
