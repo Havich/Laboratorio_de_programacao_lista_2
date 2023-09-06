@@ -1,0 +1,30 @@
+/*Faça um programa que leia dois valores nas variáveis A e B respectivamente 
+troque o valor contido na variável A pelo valor em B, e o valor em B pelo valor em A, isto é,
+imprimiremos A e B com os valores trocados*/
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+//Declaração de variáveis
+int A, B;
+
+//Entrada de dados
+printf("Digite o valor de A\n");
+scanf("%d", &A);
+printf("Digite o valor de B\n");
+scanf("%d", &B);
+
+//Cálculo
+A = A + B;
+B = A - B;
+A = A - B;
+
+//Saída de dados
+printf("Valor de A e B depois da troca = %d %d\n", A, B);
+
+//Fim da função principal
+return 0;
+}
