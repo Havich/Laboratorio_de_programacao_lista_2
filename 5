@@ -1,0 +1,30 @@
+/*Faça um programa que leia A, B e C e calcule a seguinte fórmula:
+ (7*C+5*B)/ (2*A*3), armazenando-a na variável Result.*/
+ 
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+//Declaração de variáveis
+float A, B, C, result;
+
+//Entrada de dados
+    printf("Digite o valor de A\n");
+    scanf("%f", &A);
+    printf("Digite o valor de B\n");
+    scanf("%f", &B);
+    printf("Digite o valor de C\n");
+    scanf("%f", &C);
+    
+    //Cálculo
+    result = (7 * C + 5 * B ) / ( 2 * A * 3);
+
+//Saída de dados
+printf("Valor = %.2f\n", result);
+
+//Fim da função principal
+return 0;
+}
