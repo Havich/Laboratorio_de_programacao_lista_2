@@ -1,0 +1,26 @@
+/*O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos (aplicados ao custo de fábrica).
+Supondo que a percentagem do distribuidor seja de 28% e os impostos de 45%, escrever um programa em C que leia O custo de fábrica de um carro escreva o custo consumidor.*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    float valori, valorf;
+    
+    //Entrada de dados
+    printf("Digite o valor de fábrica\n");
+    scanf("%f", &valori);
+    
+    //Cálculo
+    valorf = valori + (valori * 0.45) + (valori * 0.28);
+    
+    //Saída de dados
+    printf("O valor final é = %.2f!\n", valorf);
+
+    //Fim da função principal
+    return 0;
+}
