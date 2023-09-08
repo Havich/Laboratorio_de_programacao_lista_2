@@ -1,0 +1,29 @@
+/*Faça um programa que leia as variáveis y e z. 
+Após, calcule e mostre o valor de x, dado pela expressão. 
+X=sqtr(y*(y^22+z^33)*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+#include <math.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    long int x;
+    int y, z;
+    
+    //Entrada de dados
+    printf("Digite os valores de y e z\n");
+    scanf("%d%d", &y, &z);
+    
+    //Cálculo
+    x = sqrt(y * (pow(y, 22) + pow(z, 33)));
+    
+    //Saída de dados
+    printf("O valor final é = %d\n", x);
+
+    //Fim da função principal
+    return 0;
+}
