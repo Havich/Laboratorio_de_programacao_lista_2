@@ -1,0 +1,34 @@
+/*Faça um programa que leia o número do funcionário, o número de horas trabalhadas mensais,
+o valor que recebe por hora e o número de filhos com idade menor de 14 anos. 
+Calcular e escrever o salário deste funcionário, sendo que cada filho menor de 14 anos acrescenta 10% do salário*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    int n, horas, valor, filhos;
+    float salario;
+    
+    //Entrada de dados
+    printf("Digite seu numero\n");
+    scanf("%d", &n);
+    printf("Digite o número de horas trabalhadas\n");
+    scanf("%d", &horas);
+    printf("Digite o valor da sua hora\n");
+    scanf("%d", &valor);
+    printf("Digite a quantidade de filhos menores de 14 anos\n");
+    scanf("%d", &filhos);
+    
+    //Cálculo
+    //salariob = (valor * horas)
+    salario = ((filhos * 0.1) + 1) * (valor * horas);
+    //Saída de dados
+    printf("Olá funcionario %d!\nSeu salario é  = %.2f\n", n, salario);
+
+    //Fim da função principal
+    return 0;
+}
